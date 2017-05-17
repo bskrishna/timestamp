@@ -12,7 +12,6 @@ app.get('/:dateStr', function (req, res) {
     };
 
     res.writeHead(200, {'content-type':'text/html'});
-    res.write("Hello there");
 
     natStrDate = new Date(req.params.dateStr);
     numDate = new Date(Number(req.params.dateStr));
